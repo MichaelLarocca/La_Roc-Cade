@@ -1,0 +1,22 @@
+{
+  "name": "la_roc-cade",
+  "version": "1.0.0",
+  "description": "La Roc-Cade is an arcade game website for playing video games that I create.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelLarocca/La_Roc-Cade.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelLarocca/La_Roc-Cade/issues"
+  },
+  "homepage": "https://github.com/MichaelLarocca/La_Roc-Cade#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
