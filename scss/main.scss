@@ -454,10 +454,32 @@ main.reflect{
   }
 }
 
+#about main {
+  // border: 3px solid red;
+  margin-top: 200px;
+}
+
 #about-title {
   border-bottom: 3px solid #333;
   width: 200px;
   margin: 25px auto;
+}
+
+#about {
+
+
+  a {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: lighten(#333, 50);
+  }
+
+  i {
+    margin: 0 5px;
+  }
 }
 
 .contact {
@@ -468,7 +490,7 @@ main.reflect{
     #contact-title {
         border-bottom: 3px solid #333;
         width: 200px;
-        margin: 25px auto;
+        margin: 100px auto;
     }
 
     h1 {
@@ -491,6 +513,10 @@ main.reflect{
             padding: 0 25px;
             border-radius: 25px;
         }
+    }
+
+    a {
+      text-decoration: underline;
     }
 
     a:hover {

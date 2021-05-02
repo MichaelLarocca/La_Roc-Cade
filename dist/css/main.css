@@ -361,10 +361,23 @@ main.reflect {
   main.reflect p {
     font-size: 1.2rem; }
 
+#about main {
+  margin-top: 200px; }
+
 #about-title {
   border-bottom: 3px solid #333;
   width: 200px;
   margin: 25px auto; }
+
+#about a {
+  text-decoration: underline; }
+
+#about a:hover {
+  text-decoration: underline;
+  color: #b3b3b3; }
+
+#about i {
+  margin: 0 5px; }
 
 .contact {
   width: 75%;
@@ -373,7 +386,7 @@ main.reflect {
   .contact #contact-title {
     border-bottom: 3px solid #333;
     width: 200px;
-    margin: 25px auto; }
+    margin: 100px auto; }
   .contact h1 {
     text-align: center; }
   .contact h3 {
@@ -388,6 +401,8 @@ main.reflect {
       flex-direction: row;
       padding: 0 25px;
       border-radius: 25px; }
+  .contact a {
+    text-decoration: underline; }
   .contact a:hover {
     text-decoration: underline;
     color: #b3b3b3; }
