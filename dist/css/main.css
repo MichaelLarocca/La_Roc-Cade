@@ -74,7 +74,12 @@ nav a {
   color: whitesmoke;
   margin-left: 25px;
   margin-right: 25px;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out; }
+  nav a:hover {
+    background-color: whitesmoke;
+    color: #333;
+    text-decoration: underline; }
 
 nav ul {
   display: flex;
@@ -215,7 +220,8 @@ h3 {
   position: relative;
   /*   animation: mymove 15s infinite; */
   /*   transition: margin 1.35s ease-in-out; */
-  transition: left 0.3s cubic-bezier(0.27, -0.43, 1, 1.01); }
+  transition: left 0.3s cubic-bezier(0.27, -0.43, 1, 1.01);
+  cursor: url(../dist/img/iconmonstr-coin-3.svg), auto; }
 
 /* @keyframes mymove { */
 /*   from {top: 0px;}

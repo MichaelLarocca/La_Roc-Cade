@@ -1,0 +1,52 @@
+.ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; }
+
+main {
+  border: 3px solid #333;
+  border-radius: 25px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 25px; }
+  main h1 {
+    text-align: center; }
+  main h3 {
+    text-align: left; }
+  main p {
+    font-size: 1.2rem; }
+
+#about-title {
+  border-bottom: 3px solid #333;
+  width: 200px;
+  margin: 25px auto; }
+
+.contact {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 25px; }
+  .contact #contact-title {
+    border-bottom: 3px solid #333;
+    width: 200px;
+    margin: 25px auto; }
+  .contact h1 {
+    text-align: center; }
+  .contact h3 {
+    text-align: left; }
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around; }
+    .contact-info div {
+      border: 2px solid #333;
+      flex-direction: row;
+      padding: 0 25px;
+      border-radius: 25px; }
+  .contact a:hover {
+    text-decoration: underline;
+    color: #b3b3b3; }
+  .contact i {
+    margin: 0 5px; }

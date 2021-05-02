@@ -84,6 +84,13 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     text-decoration: none;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+
+    &:hover {
+      background-color: whitesmoke;
+      color: #333;
+      text-decoration: underline;
+    }
   }
   nav ul {
     display: flex;
@@ -91,7 +98,6 @@ body {
   }
   nav ul li {
     margin: 0 25px;
-    
   }
   
   @media only screen and (max-width: 800px) {
@@ -249,6 +255,8 @@ body {
   /*   animation: mymove 15s infinite; */
   /*   transition: margin 1.35s ease-in-out; */
     transition: left .3s cubic-bezier(.27,-0.43,1,1.01);
+    // cursor: pointer;
+    cursor: url(../dist/img/iconmonstr-coin-3.svg), auto;  
   }
   
   /* @keyframes mymove { */
