@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     background-color: whitesmoke;
@@ -77,6 +79,14 @@ body {
     background-color: #333;
     color: whitesmoke;
     margin-bottom: 25px;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    p {
+      margin-left: 25px;
+    }
   }
   nav a {
     margin-top: 15px;
@@ -201,7 +211,19 @@ body {
       opacity: 0.25;
   }
   
-  
+  #games{
+    // border: 5px solid red; 
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+
+  #about,
+  #contact {
+    // border: 5px solid blue;
+    height: 100vh; 
+  }
+
+
   /*  */
   #logo {
     border: 5px solid white;
@@ -255,8 +277,9 @@ body {
   /*   animation: mymove 15s infinite; */
   /*   transition: margin 1.35s ease-in-out; */
     transition: left .3s cubic-bezier(.27,-0.43,1,1.01);
-    // cursor: pointer;
-    cursor: url(../dist/img/iconmonstr-coin-3.svg), auto;  
+    cursor: url('../img/quater-02.png'), auto;
+    
+    // cursor: crosshair;
   }
   
   /* @keyframes mymove { */
@@ -365,14 +388,117 @@ body {
   
   .button-quater:hover,
   .button-quater:focus {
-    cursor: pointer;
     color: greenyellow;
     border: 3px solid green;
     box-shadow: 1px 1px 1px black, 2px 2px 2px green, -1px -1px 7px greenyellow;
     text-shadow: 1px 1px 1px green;
+
+      
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        cursor: url('../img/quater-02.png'), auto;
+      }
+    }
   }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* About */
+  .ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+        // border: 3px solid #333;
+//     border-radius: 25px;
+//     width: 50%;
+//     margin: 0 auto;
+//     padding: 0 25px;
+
+//     h1 {
+//         text-align: center;
+//     }
+
+//     h3 {
+//         text-align: left;
+//     }
+
+//     p {
+//         font-size: 1.2rem;
+//     }
+}
+main.reflect{
+  border: 3px solid #333;
+  border-radius: 25px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  h1 {
+      text-align: center;
   }
+
+  h3 {
+      text-align: left;
+  }
+
+  p {
+      font-size: 1.2rem;
+  }
+}
+
+#about-title {
+  border-bottom: 3px solid #333;
+  width: 200px;
+  margin: 25px auto;
+}
+
+.contact {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 25px;
+
+    #contact-title {
+        border-bottom: 3px solid #333;
+        width: 200px;
+        margin: 25px auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    &-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-around;
+
+        div {
+            border: 2px solid #333;
+            flex-direction: row;
+            padding: 0 25px;
+            border-radius: 25px;
+        }
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: lighten(#333, 50);
+    }
+    
+    i {
+        margin: 0 5px;
+    }
+}

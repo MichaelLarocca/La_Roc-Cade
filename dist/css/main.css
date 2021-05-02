@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: whitesmoke;
   margin: 0;
@@ -67,7 +70,13 @@ nav {
   /*   align-items: center; */
   background-color: #333;
   color: whitesmoke;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%; }
+  nav p {
+    margin-left: 25px; }
 
 nav a {
   margin-top: 15px;
@@ -172,6 +181,14 @@ nav ul li {
 .unselected {
   opacity: 0.25; }
 
+#games {
+  margin-top: 50px;
+  padding-top: 50px; }
+
+#about,
+#contact {
+  height: 100vh; }
+
 /*  */
 #logo {
   border: 5px solid white;
@@ -221,7 +238,7 @@ h3 {
   /*   animation: mymove 15s infinite; */
   /*   transition: margin 1.35s ease-in-out; */
   transition: left 0.3s cubic-bezier(0.27, -0.43, 1, 1.01);
-  cursor: url(../dist/img/iconmonstr-coin-3.svg), auto; }
+  cursor: url("../img/quater-02.png"), auto; }
 
 /* @keyframes mymove { */
 /*   from {top: 0px;}
@@ -307,12 +324,72 @@ body {
 
 .button-quater:hover,
 .button-quater:focus {
-  cursor: pointer;
   color: greenyellow;
   border: 3px solid green;
   box-shadow: 1px 1px 1px black, 2px 2px 2px green, -1px -1px 7px greenyellow;
   text-shadow: 1px 1px 1px green; }
+  .button-quater:hover a,
+  .button-quater:focus a {
+    color: inherit;
+    text-decoration: none; }
+    .button-quater:hover a:hover,
+    .button-quater:focus a:hover {
+      cursor: url("../img/quater-02.png"), auto; }
 
 a {
   color: inherit;
   text-decoration: none; }
+
+/* About */
+.ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; }
+
+main.reflect {
+  border: 3px solid #333;
+  border-radius: 25px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 25px; }
+  main.reflect h1 {
+    text-align: center; }
+  main.reflect h3 {
+    text-align: left; }
+  main.reflect p {
+    font-size: 1.2rem; }
+
+#about-title {
+  border-bottom: 3px solid #333;
+  width: 200px;
+  margin: 25px auto; }
+
+.contact {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 25px; }
+  .contact #contact-title {
+    border-bottom: 3px solid #333;
+    width: 200px;
+    margin: 25px auto; }
+  .contact h1 {
+    text-align: center; }
+  .contact h3 {
+    text-align: left; }
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around; }
+    .contact-info div {
+      border: 2px solid #333;
+      flex-direction: row;
+      padding: 0 25px;
+      border-radius: 25px; }
+  .contact a:hover {
+    text-decoration: underline;
+    color: #b3b3b3; }
+  .contact i {
+    margin: 0 5px; }
