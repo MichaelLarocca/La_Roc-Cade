@@ -75,7 +75,7 @@ nav {
   top: 0;
   z-index: 1;
   width: 100%; }
-  nav p {
+  nav #laroccade {
     margin-left: 25px; }
 
 nav a {
@@ -98,19 +98,11 @@ nav ul li {
   margin: 0 25px; }
 
 @media only screen and (max-width: 800px) {
-  .container {
-    overflow: initial;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px; }
-  div.container {
-    /*     border: 1px solid green; */
-    /*     margin-left: 25px; */
-    /*     margin-top: 550spx; */ }
-  .arrow {
-    display: none; }
   nav {
-    display: none; } }
+    font-size: .7rem;
+    justify-content: space-between; }
+    nav #laroccade {
+      display: none; } }
 
 /* Toggle */
 .toggle-text {
