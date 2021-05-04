@@ -19,8 +19,6 @@ body {
   }
   
   .container {
-  /*   border: 5px solid red; */
-  /*   position: absolute; */
     top: 250px;
     overflow: hidden;
       
@@ -30,19 +28,13 @@ body {
     width: 1000px;
     height: 500px;
     
-  /*   margin-left: 100px; */
-  /*   margin: 0 10%; */
     margin: 0 auto;
   }
   
   #carousel {
     display: flex;
-  /*   flex-direction: column; */
     justify-content: space-between;
     align-items: space-between;
-  /*   flex-direction: row; */
-    
-  /*   height: 400px; */
   }
   
   .arrow {    
@@ -75,11 +67,9 @@ body {
   nav {
     display: flex;
     justify-content: space-between;
-  /*   align-items: center; */
     background-color: #333;
     color: whitesmoke;
     margin-bottom: 25px;
-
     position: fixed;
     top: 0;
     z-index: 1;
@@ -89,7 +79,8 @@ body {
     }
   }
   nav a {
-    margin-top: 15px;
+    padding: 5px 5px;
+    border-radius: 25px;
     color: whitesmoke;
     margin-left: 25px;
     margin-right: 25px;
@@ -109,32 +100,11 @@ body {
   nav ul li {
     margin: 0 25px;
   }
-  
-  // @media only screen and (max-width: 800px) {
-  //   .container {
-  //     overflow: initial;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     gap: 8px;
-  //   }
-  //   div.container {
-  // /*     border: 1px solid green; */
-  // /*     margin-left: 25px; */
-  // /*     margin-top: 550spx; */
-  //   }
-  //   .arrow {
-  //     display: none;    
-  //   }
-  //   nav {
-  //     display: none;
-  //   }
-  // }
 
   @media only screen and (max-width: 800px) {
     nav {
       font-size: .7rem;
       justify-content: space-between;
-
 
       #laroccade {
         display: none;
@@ -144,13 +114,12 @@ body {
   
   
   /* Toggle */
-  
   .toggle-text {
       font-size: 10px;
   }
   
   .toggle {
-  /*     border: 3px solid red; */
+ 
       display: flex;
       align-items: center;
       margin-bottom: 20px;
@@ -177,14 +146,7 @@ body {
     margin-bottom: 12px;
     margin-left: 5px;
   }
-  /* .toggle-btn::before {
-    position: absolute;
-    content: "  ";
-    margin-bottom: 12px;
-    margin-right: 12px;
-  } */
-  
-  
+
   .inner-circle {
       width: 30px;
       height: 30px;
@@ -209,11 +171,8 @@ body {
   }
   
   .toggle-btn.toggled > .inner-circle {
-  /*     transform: translateX(30px); */
       transform: translateX(15px);
       background-color: white;
-      
-  /*     background-image: url("img/Empire.png"); */
       background-position: center; 
       background-repeat: no-repeat; 
       background-size: cover; 
@@ -231,7 +190,6 @@ body {
 
   #about,
   #contact {
-    // border: 5px solid blue;
     height: 100vh; 
   }
 
@@ -239,25 +197,21 @@ body {
   /*  */
   #logo {
     border: 5px solid white;
-  /*   Night Theme */
-  /*   border: 5px solid #333; */
     width: 500px;
     margin: 0 auto;
-  /*   box-shadow: 1px 1px 1px black, 2px 2px 2px blueviolet, -1px -1px 7px violet; */
     box-shadow: 1px 1px 1px black, 2px 2px 2px rgb(211,13,42), -1px -1px 7px red;
     color: whitesmoke;
     /* Night Theme */
   /*   color: #111;  */
     font-size: 4rem;
     text-align: center;
-  /*   text-shadow: 1px 1px 1px black, 2px 2px 2px blueviolet, -1px -1px 7px violet; */
     box-shadow: 1px 1px 1px black, 2px 2px 2px rgb(211,13,42), -1px -1px 7px red;
     background-image: url('../img/LaRocCade-01.png');  
     
-    height: 100px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 100px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
     width: 275px;
   }
   
@@ -269,80 +223,29 @@ body {
   }
   
   .reflect {
-  
-  /*     -webkit-box-reflect: below; */
-  /*     -webkit-box-reflect: below 8px; */
-  /*   -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4))); */
       -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.5)));
   }
   
   .game-card{
-  /*   transform: rotateY(60deg) translateZ(250px); */
-  /*   background: #0072bc; */
+
     background-color: transparent;
-  /*   text-shadow: 1px 1px 1px black, 2px 2px 2px blueviolet, -1px -1px 7px violet; */
     text-shadow: 1px 1px 1px black, 2px 2px 2px rgb(211,13,42), -1px -1px 7px red;
-  
-    
+
     position: relative;
-  
-  /*   animation: mymove 15s infinite; */
-  /*   transition: margin 1.35s ease-in-out; */
+
     transition: left .3s cubic-bezier(.27,-0.43,1,1.01);
     cursor: url('../img/quater-02.png'), auto;
     
     // cursor: crosshair;
   }
-  
-  /* @keyframes mymove { */
-  /*   from {top: 0px;}
-    to {top: 200px;} */
-  /*    margin: 0 500px;
-    
-    0% { margin: 0;}
-    50% { margin: 0 500px;}
-    100% { margin: 0;}
-  } */
-  
-  /* .game-01 {
-    border: 5px solid green;
-    position: absolute;
-    left: 0px;
-  }
-  .game-02 {
-    border: 5px solid green;
-    position: absolute;
-    left: 400px;
-  }
-  .game-03 {
-    border: 5px solid green;
-    position: absolute;
-    left: 800px;
-  }
-  .game-04 {
-    border: 5px solid green;
-    position: absolute;
-    left: 1200px;
-  }
-  .game-05 {
-    border: 5px solid green;
-    position: absolute;
-    left: 1600px;
-  }
-  .game-06 {
-    border: 5px solid green;
-    position: absolute;
-    left: 2000px;
-  } */
+
   
   body {
-  /*   font-family: Arial, Helvetica, sans-serif; */
     color: #333;
   }
   
   .flip-card {
-  
-    
+
     background-color: transparent;
     width: 300px;
     height: 300px;
@@ -351,8 +254,7 @@ body {
   }
   
   .flip-card-inner {
-  
-    
+
     position: relative;
     width: 100%;
     height: 100%;
@@ -374,8 +276,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-  
-  
+
   }
   
   .flip-card-front {  
@@ -403,7 +304,7 @@ body {
     color: greenyellow;
     border: 3px solid green;
     box-shadow: 1px 1px 1px black, 2px 2px 2px green, -1px -1px 7px greenyellow;
-    text-shadow: 1px 1px 1px green;
+    text-shadow: 1px 1px 1px greenyellow;
 
       
     a {
@@ -421,30 +322,13 @@ a {
   text-decoration: none;
 }
 /* About */
-  .ctn {
+.ctn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 70vh;
 
-        // border: 3px solid #333;
-//     border-radius: 25px;
-//     width: 50%;
-//     margin: 0 auto;
-//     padding: 0 25px;
-
-//     h1 {
-//         text-align: center;
-//     }
-
-//     h3 {
-//         text-align: left;
-//     }
-
-//     p {
-//         font-size: 1.2rem;
-//     }
 }
 main.reflect{
   border: 3px solid #333;
