@@ -76,7 +76,7 @@ In the Scrimba project taught by [James Q Quick](https://selftaughttxg.com/2021/
 
 ---
 
-**For the Scrimba project, I created a Star Wars theme toggle switch that changes to a Rebel logo for the light thems and then turns into an Empire logo when switched to the dark them.**
+**For the Scrimba project, I created a Star Wars theme toggle switch that changes to a Rebel logo for the light themes and then turns into an Empire logo when switched to the dark theme.**
 
 ![Star Wars Toggle Switch - light](https://selftaughttxg.com/static/2514400a841d1629bccf8e07fe784d15/98b92/Toggle-StarWars-Light.png)
 
@@ -288,6 +288,22 @@ transition: left .3s cubic-bezier(.27,-0.43,1,1.01);
 ```
 
 **[transition-timing-function Property](https://www.w3schools.com/cssref/css3_pr_transition.asp)**
+
+---
+
+### La Roc-Cade Games
+
+So far, I have created two Scrimba game projects that are available to play, **Scrimba Snake** and **Star Wars Dice Duel**.
+
+As part of [Scrimba's Frontend Web Developer Career Path](https://scrimba.com/learn/frontend), there is also a Pac-Man game that I will be creating and adding to La Roc-Cade soon!
+
+---
+
+***While creating the first two Scrimba game projects, I documented and shared the process in two articles.***
+
+**[Scrimba: Snake Game](https://selftaughttxg.com/2021/04-21/Scrimba-SnakeGame/)**
+
+**[Scrimba Challenge: Dice Game - Make it your own](https://selftaughttxg.com/2021/04-21/Scrimba-Challenge-DiceGame-MakeItYourOwn/)**
 
 ---
 
